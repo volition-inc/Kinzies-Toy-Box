@@ -1,12 +1,13 @@
-# File Formats
+File Formats
+============
 
 ## TOC
-**[VPP Files](#vpp-files)**
-**[STR2 Files](#str2-files)**
+- [VPP Files](#vppfiles)
+- [STR2 Files](#strfiles)
 
 
 
-
+<a name="vppfiles"></a>
 ## VPP Files
 
 The vpp_pc file format is just an archive file, similar to a zip file. It is used as a general format to group files needed by type. We generate a packfile for things like items, characters, vehicles and sounds.
@@ -60,7 +61,7 @@ File format is the following:
 // NOTE: for computing DATA_SIZE in CONDENSED formats, do not count the the
 // alignment_pad of the terminanl file.
 ```
-
+<a name="str2files"></a>
 ## STR2 Files 
 
 Str2_pc files are just like packfiles used in SR3, but they are specifically used by the streaming system and have a required file inside of them(the .asm_pc file). The str2_pc file is a collection of the files needed for a specific streaming container such as a single weapon, character, or vehicle.

@@ -3,8 +3,7 @@ File Formats
 
 Information on file formats!
 
-1\. [VPP Files](#vppfiles)  
-2\.  [STR2 Files](#str2files)  
+!TOC 
 
 
 

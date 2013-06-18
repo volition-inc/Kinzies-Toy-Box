@@ -1,14 +1,13 @@
 # File Formats
 
 ## TOC
-**[vpp_pc files](#vpp_pc-files)**
-**[str2_pc files](#str2_pc-files)**
-**[v\_file_header](#v_file_header)**
-**[czn/gzn files](#cnz_gzn)**
+**[VPP Files](#vpp-files)**
+**[STR2 Files](#str2-files)**
 
 
 
-## vpp_pc files
+
+## VPP Files
 
 The vpp_pc file format is just an archive file, similar to a zip file. It is used as a general format to group files needed by type. We generate a packfile for things like items, characters, vehicles and sounds.
 
@@ -62,11 +61,11 @@ File format is the following:
 // alignment_pad of the terminanl file.
 ```
 
-## str2_pc files 
+## STR2 Files 
 
 Str2_pc files are just like packfiles used in SR3, but they are specifically used by the streaming system and have a required file inside of them(the .asm_pc file). The str2_pc file is a collection of the files needed for a specific streaming container such as a single weapon, character, or vehicle.
 
-## <a name="v_file_header" />v\_file_header
+## v\_file_header
 
 Used at the top of certain files to describe data referenced by this file so we can build streaming containers. Most container building was still done by table files on SR3, but some things like the zone file had a v_file_header with files referenced by the zone.
 
@@ -87,7 +86,7 @@ struct v_file_header
 
 ```
 
-# <a name="cnz_gzn" />czn/gzn files
+# czn/gzn files
 
 The czn/gzn zone files correspond to the cpu data and gpu data required to load a piece of the world. These files contain everything from the physics to the objects needed for that piece.
 

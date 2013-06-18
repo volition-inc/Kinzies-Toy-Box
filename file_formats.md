@@ -3,7 +3,7 @@ File Formats
 
 ## TOC
 - [VPP Files](#vppfiles) 
-- [STR2 Files](#strfiles) 
+- [STR2 Files](#str2files) 
 
 
 

@@ -1,10 +1,10 @@
 # File Formats
 
 ## TOC
-- [vpp_pc files](#vpp_pc-files)
-- [str2_pc files](#str2_pc)
-- [v\_file_header](#v_file_header)
-- [czn/gzn files](#cnz_gzn)
+**[vpp_pc files](#vpp_pc-files)**
+**[str2_pc files](#str2_pc-files)**
+**[v\_file_header](#v_file_header)**
+**[czn/gzn files](#cnz_gzn)**
 
 
 
@@ -62,7 +62,7 @@ File format is the following:
 // alignment_pad of the terminanl file.
 ```
 
-## <a name="str2_pc" />str2_pc files 
+## str2_pc files 
 
 Str2_pc files are just like packfiles used in SR3, but they are specifically used by the streaming system and have a required file inside of them(the .asm_pc file). The str2_pc file is a collection of the files needed for a specific streaming container such as a single weapon, character, or vehicle.
 

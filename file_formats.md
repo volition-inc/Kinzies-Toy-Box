@@ -1,9 +1,10 @@
 File Formats
 ============
 
-## TOC
-- [VPP Files](#vppfiles) 
-- [STR2 Files](#str2files) 
+Information on file formats!
+
+- [VPP Files](#vppfiles)  
+- [STR2 Files](#str2files)  
 
 
 

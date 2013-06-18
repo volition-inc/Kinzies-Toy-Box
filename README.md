@@ -6,6 +6,5 @@ Welcome to the SR3 Modding repository! Within this repo you will find tools and 
 - Read up on [file formats](file_formats.md) information.  
 
 ## Tools
-- Various file [Viewers](/tools/viewers/README.md)  
-- [Packaging Tool](/tools/vPkg/README.md)
-
+- Various file [Viewers](tools/viewers/README.md)  
+- [Packaging Tool](tools/vPkg/README.md)

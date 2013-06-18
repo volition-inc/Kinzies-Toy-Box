@@ -1,14 +1,14 @@
 # File Formats
 
 ## TOC
-- [vpp_pc files](#vpp_pc)
+- [vpp_pc files](#vpp_pc-file)
 - [str2_pc files](#str2_pc)
 - [v\_file_header](#v_file_header)
 - [czn/gzn files](#cnz_gzn)
 
 
 
-## <a name="vpp_pc" />vpp_pc files
+## vpp_pc files
 
 The vpp_pc file format is just an archive file, similar to a zip file. It is used as a general format to group files needed by type. We generate a packfile for things like items, characters, vehicles and sounds.
 

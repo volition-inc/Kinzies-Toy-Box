@@ -1,7 +1,7 @@
 # File Formats
 
 ## TOC
-- [vpp_pc files](#vpp_pc-file)
+- [vpp_pc files](#vpp_pc-files)
 - [str2_pc files](#str2_pc)
 - [v\_file_header](#v_file_header)
 - [czn/gzn files](#cnz_gzn)

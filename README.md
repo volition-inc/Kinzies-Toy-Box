@@ -8,3 +8,4 @@ Welcome to the SR3 Modding repository! Within this repo you will find tools and 
 ## Tools
 - Various file [Viewers](tools/viewers/)  
 - [Packaging Tool](tools/vPkg/)
+- [Table File Editor](tools/table_file_editor)

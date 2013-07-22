@@ -23,3 +23,4 @@ vpkg_wd -combine_asms new_vehicle_containers.asm_pc my_mod\*.asm_pc vehicle_cont
 
 Extracting a packfile will extract to the working dir or to the current working directory if working dir is not set and is able to extract vpp_pc and str2_pc files.
 
+Note that building str2 files and containers requires that the tool understands the file types you are putting into the packfile. It will skip any files it does not recognize. If you run across a file type that it doesn't recognize that you think it should, please post a reply to the thread here: http://www.saintsrowmods.com/forum/threads/something-to-keep-you-busy-until-the-sdk-can-be-released.2891/

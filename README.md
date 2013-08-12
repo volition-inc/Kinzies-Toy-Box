@@ -6,9 +6,10 @@ Within this repo you will find tools and information for accessing SR3 data and 
 This is a early pre-release of tools, and is not yet an "initial release" of the SR3 Modding SDK.
 
 ## Documentation
-- LUA Script action [doxygen files](http://git.gameoire.com/volition-open-source/sr3_modding/blob/master/script_actions/_script_actions_index.html) for SR3  
-- Read up on [file formats](file_formats.md) information.  
+- LUA Script action [doxygen files](http://git.gameoire.com/volition-open-source/sr3_modding/blob/master/script_actions/_script_actions_index.html) for SR3
+- Read up on [file formats](file_formats.md) information.
 
 ## Tools
-- Various file [Viewers](tools/viewers/)  
+- Various file [Viewers](tools/viewers/)
 - [Packaging Tool](tools/vPkg/)
+- [Table File Editor](tools/table_file_editor)

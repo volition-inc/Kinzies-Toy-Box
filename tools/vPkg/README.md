@@ -1,26 +1,19 @@
 # vPkg
 
-The vpkg tool for SR3 is designed to allow creation of packfiles(vpp_pc), compressed streaming files(sr2_pc) and asset assembler files(asm_pc). The tool supports extraction and building of the archives used in Saints Row 3.
+The vpkg tool for Saints Row 3 is designed to allow creation of packfiles(vpp_pc), compressed streaming files(sr2_pc) and asset assembler files(asm_pc). The tool supports extraction and building of the archives used in Saints Row 3.
 
 Running the tool involves the command line so batch files can easily be created to accomplish tasks. The command line arguments are as follows:
 - -working_dir <dirname>
-- -build_vehicle <vehicle_package_file.str2_pc> <filename1> <filename2> …
-- -build_customizable_vehicle <customizable_vehicle_package_file.str2_pc> <filename1> <filename2> …
-- -build_item <item_package_file.str2_pc> <filename1> <filename2> …
-- -build_customization_item <customization_item.str2_pc> <filename1> <filename2> …
-- -build_preload_item <item_preload_package_file.str2_pc> <filename1> <filename2> …
-- -build_character <character_package_file.str2_pc> <filename1> <filename2> …
+- -list_allocators
+- -list_container_types
+- -extract_asm <asm_filename>
+- -build_asm <asm_xml_filename>
 - -build_packfile <packfile_name.vpp_pc> <-combine_asms combined_asm_name.asm_pc> <filename1> <filename2> …
-- -combine_asms <new_asm_filename.asm_pc> <asm_file1> <asm_file2> …
 - -extract_packfile <packfile_name.vpp_pc>
+
+extract asm will convert an asm file into an xml file for editing
+build asm will convert an xml asm file to a binary asm file. This also supports creating new asm files from new/altered xml.
 
 working dir is a global setting that will make extract_packfile and build_packfile
 
-The str2 building commands(vehicle, item, character) will build a non-preloaded str2_pc file from the files provided along with building and including an asm file for the streaming system. You can later combine those str2 files and asm files into a single packfile with a single asm file by using -combine_asms. The build_packfile switch accepts wildcards for filenames, so things like -build_packfile my_new_packfile.vpp_pc -combine_asms my_new_packfile.asm_pc *.asm_pc *.str2_pc will work.
-
-The combine_asms switch will combine asm files into a single asm file, but keep in mind that in the case of duplicated containers the first one found will be the one used. If you are using it to rebuild a asm for a packfile like vehicle_containers.asm_pc, you need to make sure to place your new container asm files first in the parameter list. An example command line for that situation:
-vpkg_wd -combine_asms new_vehicle_containers.asm_pc my_mod\*.asm_pc vehicle_containers.asm_pc
-
 Extracting a packfile will extract to the working dir or to the current working directory if working dir is not set and is able to extract vpp_pc and str2_pc files.
-
-Note that building str2 files and containers requires that the tool understands the file types you are putting into the packfile. It will skip any files it does not recognize. If you run across a file type that it doesn't recognize that you think it should, please post a reply to the thread here: http://www.saintsrowmods.com/forum/threads/something-to-keep-you-busy-until-the-sdk-can-be-released.2891/
